@@ -87,8 +87,8 @@ let person1 = {First="john"; Last="Doe"}
 
 // Union types have choices. Vertical bars are separators.
 type Temp = 
-	| DegreesC of float
-	| DegreesF of float
+   | DegreesC of float
+   | DegreesF of float
 let temp = DegreesF 98.6
 
 // Types can be combined recursively in complex ways.
@@ -117,3 +117,9 @@ printfn "twoTuple=%A,\nPerson=%A,\nTemp=%A,\nEmployee=%A"
 
 // There are also sprintf/sprintfn functions for formatting data
 // into a string, similar to String.Format.
+
+// if else equivalent
+let flag = true
+match flag with   
+   | true -> printf "Flag is true\n"
+   | false -> printf "Flag is false\n"
